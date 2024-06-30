@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro de Compras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- aquí también preferí un estilo directo en el html para no hacer dos archivos CSS innecesario -->
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .cart-item-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .cart-item-details h2 {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .cart-item-details p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .cart-item-price {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .total {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .checkout {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #0c0c0c;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff1919;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Carro de Compras</h1>
+        </div>
+        <div class="cart-item">
+            <img src="./img/nintendo.jpg" alt="Nintendo">
+            <div class="cart-item-details">
+                <h2>Nintendo Switch</h2>
+                <p>Consola totalmente chipiada barata</p>
+            </div>
+            <div class="cart-item-price">$99.000 CLP</div>
+        </div>
+        <div class="cart-item">
+            <img src="img/Pokemonverde.jpg" alt="Producto 2">
+            <div class="cart-item-details">
+                <h2>Pokemon Fumon</h2>
+                <p>Juego de Pokemon fumon</p>
+            </div>
+            <div class="cart-item-price">$78.000 CLP</div>
+        </div>
+        <div class="total">
+            Total: $177.000 CLP
+        </div>
+        <div class="checkout">
+            <button class="btn">Finalizar Compra</button>
+        </div>
+    </div>
+</body>
+</html>
